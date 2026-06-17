@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portafolio de Unidades</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background-image:url("Fondo.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+
+/* BARRA SUPERIOR */
+
+header{
+    background:rgba(0,0,0,0.90);
+    position:sticky;
+    top:0;
+    z-index:1000;
+    padding:15px 0;
+    backdrop-filter:blur(8px);
+}
+
+.barra-superior{
+    width:95%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    width:90px;
+    height:90px;
+    object-fit:contain;
+    background:white;
+    padding:8px;
+    border-radius:12px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.4);
+}
+
+/* MENÚ */
+
+.menu{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.menu a{
+    text-decoration:none;
+    color:white;
+    background:#0077cc;
+    padding:12px 20px;
+    border-radius:10px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.menu a:hover{
+    background:#005fa3;
+    transform:translateY(-3px);
+}
+
+/* PRESENTACIÓN */
+
+.presentacion{
+    width:80%;
+    max-width:1000px;
+    margin:80px auto;
+    background:rgba(255,255,255,0.92);
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.3);
+}
+
+.presentacion h1{
+    text-align:center;
+    color:#0077cc;
+    margin-bottom:20px;
+    font-size:48px;
+    text-shadow:
+        2px 2px 4px rgba(0,0,0,0.8);
+}    0 0 40px #0099ff;
+
+
+
+.presentacion p{
+    font-size:22px;
+    line-height:1.8;
+    text-align:justify;
+}
+
+/* UNIDADES */
+
+.unidad{
+    width:80%;
+    max-width:1000px;
+    margin:50px auto;
+    background:rgba(255,255,255,0.92);
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.3);
+}
+
+.unidad h2{
+    text-align:center;
+    color:#0077cc;
+    margin-bottom:25px;
+    font-size:40px;
+    text-shadow:
+        2px 2px 4px rgba(0,0,0,0.8);
+}
+.seccion{
+    margin-bottom:30px;
+}
+
+.seccion h3{
+    margin-bottom:12px;
+    color:#0077cc;
+    font-size:28px;
+    text-shadow:
+        1px 1px 3px rgba(0,0,0,0.8);
+}
+
+/* RESÚMENES */
+
+.caja{
+    min-height:150px;
+    background:#f8f8f8;
+    border:2px solid rgba(0,119,204,0.25);
+    border-radius:12px;
+    padding:20px;
+    line-height:1.8;
+    font-size:18px;
+    overflow-wrap:break-word;
+    white-space:pre-wrap;
+}
+
+/* IMÁGENES DE EJEMPLO */
+
+.imagen-ejemplo{
+    width:100%;
+    min-height:250px;
+    background:#f8f8f8;
+    border:2px solid rgba(0,119,204,0.25);
+    border-radius:12px;
+    padding:15px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.imagen-ejemplo img{
+    max-width:100%;
+    height:auto;
+    display:block;
+    border-radius:8px;
+}
+
+/* PIE DE PÁGINA */
+
+footer{
+    margin-top:50px;
+    background:rgba(0,0,0,0.90);
+    color:white;
+    text-align:center;
+    padding:25px;
+    font-size:20px;
+}
+.btn-regresar{
+    text-decoration:none;
+    color:white;
+    background:rgba(255,255,255,0.12);
+    border:1px solid rgba(255,255,255,0.25);
+    padding:12px 22px;
+    border-radius:10px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn-regresar:hover{
+    background:rgba(255,255,255,0.22);
+    transform:translateY(-2px);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+```
+<div class="barra-superior">
+
+    <img src="logo.png" alt="Logo TESH" class="logo">
+
+    <nav class="menu">
+        <a href="#unidad1">Tema 1 </a>
+        <a href="#unidad2">Tema 2</a>
+        <a href="#unidad3">Tema 3</a>
+        <a href="#unidad4">Tema 4</a>
+        <a href="#unidad5">Tema 5</a>
+        <a href="#unidad6">Tema 6</a>
+        <a href="index.html" class="btn-regresar">
+    ← Menú Principal
+</a>
+    </nav>
+
+    <img src="tecnm.png" alt="TecNM" class="logo">
+
+</div>
+```
+
+</header>
+
+
+
+<section class="unidad" id="unidad1">
+
+```
+<h2>Tema 1 Introducción a la Teoría de Lenguajes
+Formales. </h2>
+
+<div class="seccion">
+    <h3>Resumen</h3>
+    <div class="caja">
+```
+
+1.1 Alfabeto
+
+Un alfabeto es un conjunto finito de símbolos utilizados para formar cadenas. Estos símbolos pueden ser letras, números o caracteres especiales. Generalmente se representa con la letra griega Σ (sigma). Por ejemplo:
+
+Σ = {a, b, c}
+
+En este caso, el alfabeto está formado por los símbolos a, b y c.
+
+1.2 Cadenas
+
+Una cadena es una secuencia finita de símbolos pertenecientes a un alfabeto. Las cadenas pueden tener cualquier longitud, incluso longitud cero, conocida como cadena vacía y representada por ε.
+
+Ejemplos con el alfabeto Σ = {a, b}:
+
+ab
+aabb
+baba
+ε (cadena vacía)
+
+Las cadenas son la base para la construcción de lenguajes formales.
+
+1.3 Lenguajes, tipos y herramientas
+
+Un lenguaje es un conjunto de cadenas formadas a partir de un alfabeto y que cumplen ciertas reglas. En informática existen distintos tipos de lenguajes, como:
+
+Lenguaje máquina.
+Lenguaje ensamblador.
+Lenguajes de alto nivel (Java, Python, C++, etc.).
+
+Para desarrollar y traducir programas se utilizan herramientas como:
+
+Compiladores.
+Intérpretes.
+Editores de código.
+Depuradores.
+
+Estas herramientas facilitan la creación, traducción y ejecución de programas.
+
+1.4 Estructura de un traductor
+
+Un traductor es un programa que convierte código fuente escrito en un lenguaje de programación a otro lenguaje. Su estructura básica incluye:
+
+Análisis léxico: identifica palabras y símbolos válidos.
+Análisis sintáctico: verifica que la estructura sea correcta.
+Análisis semántico: comprueba el significado de las instrucciones.
+Generación de código: produce el código de salida.
+Optimización: mejora la eficiencia del código generado.
+
+Los compiladores e intérpretes son ejemplos de traductores.
+
+1.5 Fases de un compilador
+
+Un compilador transforma un programa escrito en un lenguaje de alto nivel en código máquina. Sus principales fases son:
+
+Análisis léxico: divide el código en tokens.
+Análisis sintáctico: verifica la gramática del lenguaje.
+Análisis semántico: revisa la coherencia y significado.
+Generación de código intermedio: crea una representación temporal.
+Optimización: mejora el rendimiento del programa.
+Generación de código objeto: produce el código ejecutable para la computadora. </div> </div>
+
+```
+<div class="seccion">
+    <h3>Ejemplo</h3>
+    <div class="imagen-ejemplo">
+        <img src="Ejemplo1.png" alt="Ejemplo Unidad 1">
+    </div>
+</div>
+```
+
+</section>
+
+<section class="unidad" id="unidad2">
+
+```
+<h2>Tema 2. Expresiones Regulares. </h2>
+
+<div class="seccion">
+    <h3>Resumen</h3>
+    <div class="caja">
+```
+
+2.1 Definición formal de una ER
+
+Una Expresión Regular (ER) es una secuencia de símbolos y operadores utilizada para describir patrones dentro de cadenas de texto. Se emplea para identificar, buscar, validar o reemplazar información en documentos, programas y bases de datos. Las expresiones regulares se construyen a partir de caracteres literales y operadores especiales como unión (|), concatenación y repetición (*, +, ?).
+
+2.2 Diseño de ER
+
+El diseño de una expresión regular consiste en crear un patrón que represente correctamente el conjunto de cadenas que se desea reconocer. Para ello se analizan las características de los datos de entrada y se seleccionan los operadores adecuados. Un buen diseño debe ser preciso, eficiente y fácil de entender para evitar errores en la validación o búsqueda de información.
+
+2.3 Aplicaciones en problemas reales
+
+Las expresiones regulares tienen numerosas aplicaciones en la informática. Se utilizan para validar correos electrónicos, números telefónicos, contraseñas y formatos de datos; buscar y reemplazar texto en documentos; filtrar información en bases de datos; analizar archivos de registro (logs); y apoyar tareas de procesamiento de lenguaje y compiladores. Gracias a su flexibilidad, son una herramienta fundamental en el desarrollo de software y la administración de sistemas.. </div> </div>
+
+```
+<div class="seccion">
+    <h3>Ejemplo</h3>
+    <div class="imagen-ejemplo">
+        <img src="Ejemplo2.png" alt="Ejemplo Unidad 2">
+    </div>
+</div>
+```
+
+</section>
+
+<section class="unidad" id="unidad3">
+
+```
+<h2>Tema 3. Autómatas Finitos. </h2>
+
+<div class="seccion">
+    <h3>Resumen</h3>
+    <div class="caja">
+```
+3.1 Conceptos: Definición y Clasificación de Autómata Finito (AF)
+
+Un Autómata Finito (AF) es un modelo matemático utilizado para reconocer patrones y lenguajes formales mediante un conjunto limitado de estados y transiciones. Funciona leyendo símbolos de entrada y cambiando de estado según reglas definidas. Los autómatas finitos se clasifican principalmente en Autómatas Finitos Deterministas (AFD), donde cada símbolo conduce a un único estado, y Autómatas Finitos No Deterministas (AFND), donde un símbolo puede generar varias transiciones posibles.
+
+3.2 Conversión de un Autómata Finito No Determinista (AFND) a Autómata Finito Determinista (AFD)
+
+La conversión de un AFND a un AFD es un proceso que permite transformar un modelo no determinista en uno determinista sin alterar el lenguaje que reconoce. Este procedimiento se realiza mediante el método de subconjuntos, donde cada estado del AFD representa un conjunto de estados del AFND. La conversión facilita la implementación práctica de analizadores léxicos y sistemas de reconocimiento de patrones.
+
+3.3 Representación de ER usando AFND
+
+Las Expresiones Regulares (ER) pueden representarse mediante Autómatas Finitos No Deterministas (AFND). Cada componente de una expresión regular, como concatenaciones, uniones y repeticiones, puede transformarse en una estructura de estados y transiciones. Esta relación permite que los patrones definidos por expresiones regulares sean procesados automáticamente por programas y compiladores.
+
+3.4 Minimización de estados en un AF
+
+La minimización de estados consiste en reducir el número de estados de un autómata sin modificar el lenguaje que reconoce. Este proceso identifica estados equivalentes y los combina para obtener una versión más eficiente del autómata. La minimización mejora el rendimiento, reduce el consumo de recursos y simplifica el análisis de los sistemas automáticos.
+
+3.5 Aplicaciones (definición de un caso de estudio)
+
+Los autómatas finitos tienen aplicaciones en áreas como compiladores, validación de datos, procesamiento de texto, sistemas de control y reconocimiento de patrones. Un caso de estudio común es la validación de cadenas en formularios web, donde un autómata verifica que una entrada cumpla reglas específicas, como formatos de correos electrónicos o contraseñas. Gracias a ello, se garantiza que los datos ingresados sean correctos antes de ser procesados por el sistema.. </div> </div>
+
+```
+<div class="seccion">
+    <h3>Ejemplo</h3>
+    <div class="imagen-ejemplo">
+        <img src="Ejemplo3.png" alt="Ejemplo Unidad 3">
+    </div>
+</div>
+```
+
+</section>
+
+<section class="unidad" id="unidad4">
+
+```
+<h2>Tema 4. Análisis Léxico. </h2>
+
+<div class="seccion">
+    <h3>Resumen</h3>
+    <div class="caja">
+```
+
+4.1 Funciones del analizador léxico
+
+El analizador léxico es la primera fase de un compilador. Su función principal es leer el código fuente carácter por carácter y agruparlo en unidades llamadas tokens, que serán utilizadas por las siguientes etapas del compilador. Además, elimina espacios en blanco, comentarios y detecta posibles errores léxicos.
+
+4.2 Componentes léxicos, patrones y lexemas
+
+En el análisis léxico intervienen tres elementos principales:
+
+Componente léxico (token): Categoría a la que pertenece una cadena de caracteres, como identificadores, palabras reservadas o números.
+Patrón: Regla que define la estructura que debe cumplir un token.
+Lexema: Secuencia de caracteres específica encontrada en el código fuente que coincide con un patrón determinado.
+
+Por ejemplo, en la instrucción int edad = 20;, el lexema edad pertenece al token identificador.
+
+4.3 Creación de Tabla de Tokens
+
+Una tabla de tokens es una estructura donde se registran los tokens identificados durante el análisis léxico. Generalmente incluye el tipo de token, el lexema y, en algunos casos, atributos adicionales. Esta tabla facilita el trabajo de las etapas posteriores del compilador y permite organizar la información obtenida del código fuente.
+
+4.4 Errores léxicos
+
+Los errores léxicos ocurren cuando el analizador encuentra símbolos o secuencias de caracteres que no cumplen con las reglas del lenguaje. Algunos ejemplos son caracteres inválidos, identificadores mal formados o cadenas de texto sin cerrar correctamente. Detectar estos errores de forma temprana ayuda a mejorar la calidad del programa y simplifica la depuración.
+
+4.5 Generadores de analizadores léxicos
+
+Los generadores de analizadores léxicos son herramientas que crean automáticamente analizadores a partir de especificaciones basadas en expresiones regulares. Entre los más conocidos se encuentran Lex y Flex. Estas herramientas reducen el tiempo de desarrollo y garantizan una implementación más eficiente y confiable.
+
+4.6 Aplicaciones (Caso de estudio)
+
+Una aplicación común del análisis léxico es el desarrollo de compiladores para lenguajes de programación. Por ejemplo, al analizar un programa escrito en Java o C++, el analizador léxico identifica palabras reservadas, operadores, números e identificadores, generando una tabla de tokens que será utilizada por las siguientes fases del compilador. Esto permite interpretar correctamente el código y detectar errores desde las primeras etapas del proceso de compilación. </div> </div>
+
+```
+<div class="seccion">
+    <h3>Ejemplo</h3>
+    <div class="imagen-ejemplo">
+        <img src="Ejemplo4.png" alt="Ejemplo Unidad 4">
+    </div>
+</div>
+```
+
+</section>
+
+<section class="unidad" id="unidad5">
+
+```
+<h2>Tema 5. Análisis Sintáctico. </h2>
+
+<div class="seccion">
+    <h3>Resumen</h3>
+    <div class="caja">
+```
+
+5.1 Definición y clasificación de gramáticas
+
+Una gramática es un conjunto de reglas que define cómo se pueden formar las estructuras válidas de un lenguaje. En teoría de compiladores, las gramáticas se clasifican según la jerarquía de Chomsky en gramáticas regulares, libres de contexto, sensibles al contexto y no restringidas. Estas permiten describir formalmente la sintaxis de un lenguaje de programación.
+
+5.2 Gramáticas Libres de Contexto (GLC)
+
+Las Gramáticas Libres de Contexto (GLC) son aquellas cuyas reglas de producción tienen un único símbolo no terminal en el lado izquierdo. Son ampliamente utilizadas en compiladores porque permiten describir estructuras complejas como expresiones, ciclos y sentencias de control. Constituyen la base para el análisis sintáctico de la mayoría de los lenguajes de programación.
+
+5.3 Árboles de derivación
+
+Un árbol de derivación representa gráficamente el proceso mediante el cual una cadena es generada a partir de una gramática. La raíz corresponde al símbolo inicial y las hojas representan los símbolos terminales de la cadena resultante. Estos árboles ayudan a visualizar la estructura sintáctica de una expresión o programa.
+
+5.4 Formas normales de Chomsky
+
+La Forma Normal de Chomsky (FNC) es una representación especial de las gramáticas libres de contexto donde las producciones siguen reglas estrictas. Generalmente, cada producción tiene la forma A → BC o A → a, donde A, B y C son símbolos no terminales y a es un símbolo terminal. Esta forma facilita ciertos algoritmos de análisis sintáctico y demostraciones teóricas.
+
+5.5 Diagramas de sintaxis
+
+Los diagramas de sintaxis son representaciones gráficas de las reglas gramaticales de un lenguaje. Utilizan símbolos y flechas para mostrar las posibles secuencias de elementos válidos. Son una herramienta útil para comprender y documentar la estructura sintáctica de un lenguaje de manera visual.
+
+5.6 Eliminación de la ambigüedad
+
+Una gramática es ambigua cuando una misma cadena puede generar más de un árbol de derivación. La eliminación de la ambigüedad consiste en modificar las reglas gramaticales para garantizar una única interpretación de cada expresión. Esto es fundamental para evitar errores durante la compilación y ejecución de programas.
+
+5.7 Tipos de analizadores sintácticos
+
+Los analizadores sintácticos verifican que la secuencia de tokens cumpla con las reglas gramaticales del lenguaje. Los principales tipos son:
+
+Descendentes (Top-Down): Construyen el árbol desde el símbolo inicial hasta los terminales.
+Ascendentes (Bottom-Up): Construyen el árbol desde los símbolos terminales hasta llegar al símbolo inicial.
+
+Entre los más utilizados se encuentran los analizadores LL y LR.
+
+5.8 Generación de matriz predictiva (cálculo FIRST y FOLLOW)
+
+La matriz predictiva se utiliza en analizadores sintácticos LL(1). Para construirla es necesario calcular:
+
+FIRST: Conjunto de símbolos terminales con los que puede comenzar una derivación.
+FOLLOW: Conjunto de símbolos terminales que pueden aparecer inmediatamente después de un no terminal.
+
+Estos conjuntos permiten determinar qué producción debe aplicarse en cada situación sin necesidad de retroceso.
+
+5.9 Manejo de errores
+
+El manejo de errores sintácticos permite detectar y reportar problemas en la estructura del código fuente. Algunos métodos comunes son la recuperación por modo pánico, la recuperación basada en frases y la corrección automática limitada. Su objetivo es proporcionar mensajes claros que ayuden al programador a corregir los errores encontrados.
+
+5.10 Generadores de analizadores sintácticos
+
+Los generadores de analizadores sintácticos son herramientas que crean automáticamente parsers a partir de una especificación gramatical. Entre las más utilizadas se encuentran Yacc, Bison y ANTLR. Estas herramientas simplifican el desarrollo de compiladores y garantizan una implementación más eficiente del análisis sintáctico.. </div> </div>
+
+```
+<div class="seccion">
+    <h3>Ejemplo</h3>
+    <div class="imagen-ejemplo">
+        <img src="Ejemplo5.png" alt="Ejemplo Unidad 5">
+    </div>
+</div>
+```
+
+</section>
+
+<section class="unidad" id="unidad6">
+
+```
+<h2>Tema 6. Máquinas de Turing. </h2>
+
+<div class="seccion">
+    <h3>Resumen</h3>
+    <div class="caja">
+```
+
+6.1 Definición formal de una Máquina de Turing (MT)
+
+Una Máquina de Turing (MT) es un modelo matemático de computación propuesto por Alan Turing en 1936. Está formada por una cinta potencialmente infinita dividida en celdas, un cabezal de lectura/escritura y un conjunto de estados con reglas de transición. La máquina procesa símbolos de entrada moviéndose por la cinta, leyendo, escribiendo y cambiando de estado hasta aceptar o rechazar una cadena. Se considera uno de los modelos fundamentales para estudiar los límites de la computación.
+
+6.2 Construcción modular de una MT
+
+La construcción modular consiste en diseñar una Máquina de Turing a partir de varios módulos o submáquinas, cada una encargada de realizar una tarea específica. Estos módulos pueden combinarse para resolver problemas más complejos sin necesidad de diseñar toda la máquina desde cero. Este enfoque facilita el desarrollo, comprensión y mantenimiento de algoritmos basados en Máquinas de Turing.
+
+6.3 Lenguajes aceptados por la MT
+
+Las Máquinas de Turing pueden reconocer un conjunto muy amplio de lenguajes, conocidos como lenguajes recursivamente enumerables. Un lenguaje es aceptado por una MT cuando existe una secuencia de transiciones que lleva a la máquina a un estado de aceptación para cualquier cadena perteneciente a dicho lenguaje. Gracias a su gran poder computacional, las Máquinas de Turing pueden reconocer todos los lenguajes aceptados por autómatas finitos y autómatas de pila, además de resolver problemas mucho más complejos que estos modelos no pueden abordar.
+
+Importancia de las Máquinas de Turing
+
+Las Máquinas de Turing son fundamentales en la teoría de la computación porque permiten estudiar qué problemas pueden resolverse mediante algoritmos y cuáles son sus limitaciones. Además, sirven como base teórica para el diseño de computadoras, compiladores y sistemas de procesamiento de información modernos.. </div> </div>
+
+```
+<div class="seccion">
+    <h3>Ejemplo</h3>
+    <div class="imagen-ejemplo">
+        <img src="Ejemplo6.png" alt="Ejemplo Unidad 6">
+    </div>
+</div>
+```
+
+</section>
+
+<footer>
+    Ponce García Victor Hugo | García Covarrubias Mauricio
+</footer>
+
+</body>
+</html>
