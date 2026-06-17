@@ -27,7 +27,7 @@ body{
     background-attachment:fixed;
 }
 
-/* BARRA SUPERIOR */
+
 
 header{
     background:rgba(0,0,0,0.90);
@@ -56,7 +56,7 @@ header{
     box-shadow:0 4px 15px rgba(0,0,0,0.4);
 }
 
-/* MENÚ */
+
 
 .menu{
     display:flex;
@@ -80,7 +80,7 @@ header{
     transform:translateY(-3px);
 }
 
-/* PRESENTACIÓN */
+
 
 .presentacion{
     width:80%;
@@ -109,16 +109,26 @@ header{
     text-align:justify;
 }
 
-/* UNIDADES */
+
 
 .unidad{
+
     width:80%;
     max-width:1000px;
+
     margin:50px auto;
-    background:rgba(255,255,255,0.92);
-    padding:30px;
-    border-radius:20px;
-    box-shadow:0 8px 25px rgba(0,0,0,0.3);
+
+    padding:35px;
+
+    background:rgba(255,255,255,0.15);
+
+    backdrop-filter:blur(12px);
+
+    border:1px solid rgba(255,255,255,0.25);
+
+    border-radius:25px;
+
+    box-shadow:0 8px 30px rgba(0,0,0,.25);
 }
 
 .unidad h2{
@@ -134,49 +144,76 @@ header{
 }
 
 .seccion h3{
+
     margin-bottom:12px;
-    color:#0077cc;
+
+    color:white;
+
     font-size:28px;
+
     text-shadow:
-        1px 1px 3px rgba(0,0,0,0.8);
+        2px 2px 6px rgba(0,0,0,.9);
 }
 
-/* RESÚMENES */
 
 .caja{
+
     min-height:150px;
-    background:#f8f8f8;
-    border:2px solid rgba(0,119,204,0.25);
-    border-radius:12px;
-    padding:20px;
+
+    background:rgba(255,255,255,0.12);
+
+    backdrop-filter:blur(12px);
+
+    border:1px solid rgba(255,255,255,0.25);
+
+    border-radius:20px;
+
+    padding:25px;
+
+    color:white; /* CAMBIO */
+
     line-height:1.8;
+
     font-size:18px;
+
     overflow-wrap:break-word;
+
     white-space:pre-wrap;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+    text-shadow:1px 1px 3px rgba(0,0,0,.8);
 }
 
-/* IMÁGENES DE EJEMPLO */
 
 .imagen-ejemplo{
-    width:100%;
-    min-height:250px;
-    background:#f8f8f8;
-    border:2px solid rgba(0,119,204,0.25);
-    border-radius:12px;
-    padding:15px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+
+    background:rgba(255,255,255,0.12);
+
+    backdrop-filter:blur(12px);
+
+    border:1px solid rgba(255,255,255,0.25);
+
+    border-radius:20px;
+
+    padding:20px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+    text-align:center;
 }
 
 .imagen-ejemplo img{
+
     max-width:100%;
+
     height:auto;
-    display:block;
-    border-radius:8px;
+
+    border-radius:12px;
+
+    margin-bottom:15px;
 }
 
-/* PIE DE PÁGINA */
 
 footer{
     margin-top:50px;
@@ -201,6 +238,26 @@ footer{
     background:rgba(255,255,255,0.22);
     transform:translateY(-2px);
 }
+.fuente-imagen{
+
+    margin-top:10px;
+
+    padding:12px;
+
+    background:rgba(255,255,255,0.15);
+
+    border:1px solid rgba(255,255,255,0.25);
+
+    border-radius:12px;
+
+    font-size:14px;
+
+    color:white;
+
+    text-shadow:1px 1px 3px rgba(0,0,0,.8);
+
+    word-break:break-all;
+}
 
 </style>
 
@@ -210,7 +267,6 @@ footer{
 
 <header>
 
-```
 <div class="barra-superior">
 
     <img src="logo.png" alt="Logo TESH" class="logo">
@@ -230,7 +286,6 @@ footer{
     <img src="tecnm.png" alt="TecNM" class="logo">
 
 </div>
-```
 
 </header>
 
@@ -238,15 +293,12 @@ footer{
 
 <section class="unidad" id="unidad1">
 
-```
 <h2>Tema 1 Introducción a la Teoría de Lenguajes
 Formales. </h2>
 
 <div class="seccion">
     <h3>Resumen</h3>
     <div class="caja">
-```
-
 1.1 Alfabeto
 
 Un alfabeto es un conjunto finito de símbolos utilizados para formar cadenas. Estos símbolos pueden ser letras, números o caracteres especiales. Generalmente se representa con la letra griega Σ (sigma). Por ejemplo:
@@ -308,27 +360,29 @@ Generación de código intermedio: crea una representación temporal.
 Optimización: mejora el rendimiento del programa.
 Generación de código objeto: produce el código ejecutable para la computadora. </div> </div>
 
-```
-<div class="seccion">
-    <h3>Ejemplo</h3>
-    <div class="imagen-ejemplo">
-        <img src="Ejemplo1.png" alt="Ejemplo Unidad 1">
+<div class="imagen-ejemplo">
+
+    <img src="Ejemplo1.png" alt="Ejemplo Unidad 1">
+
+    <div class="fuente-imagen">
+        Fuente:
+        <a href="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcQqPcZ0X8RsEPvVlFcjlqSG9TFjm5U2C75rg2UjYtX-wCmHfJynO72TnSJy_CP2MfznoOpKB84HMfFj92Q" target="_blank">
+            Ver fuente
+        </a>
     </div>
+
 </div>
-```
+
 
 </section>
 
 <section class="unidad" id="unidad2">
 
-```
 <h2>Tema 2. Expresiones Regulares. </h2>
 
 <div class="seccion">
     <h3>Resumen</h3>
     <div class="caja">
-```
-
 2.1 Definición formal de una ER
 
 Una Expresión Regular (ER) es una secuencia de símbolos y operadores utilizada para describir patrones dentro de cadenas de texto. Se emplea para identificar, buscar, validar o reemplazar información en documentos, programas y bases de datos. Las expresiones regulares se construyen a partir de caracteres literales y operadores especiales como unión (|), concatenación y repetición (*, +, ?).
@@ -341,26 +395,28 @@ El diseño de una expresión regular consiste en crear un patrón que represente
 
 Las expresiones regulares tienen numerosas aplicaciones en la informática. Se utilizan para validar correos electrónicos, números telefónicos, contraseñas y formatos de datos; buscar y reemplazar texto en documentos; filtrar información en bases de datos; analizar archivos de registro (logs); y apoyar tareas de procesamiento de lenguaje y compiladores. Gracias a su flexibilidad, son una herramienta fundamental en el desarrollo de software y la administración de sistemas.. </div> </div>
 
-```
-<div class="seccion">
-    <h3>Ejemplo</h3>
-    <div class="imagen-ejemplo">
-        <img src="Ejemplo2.png" alt="Ejemplo Unidad 2">
+<div class="imagen-ejemplo">
+
+    <img src="Ejemplo2.png" alt="Ejemplo Unidad 2">
+
+    <div class="fuente-imagen">
+        Fuente:
+        <a href="URL_DE_LA_IMAGEN_2" target="_blank">
+            Ver fuente
+        </a>
     </div>
+
 </div>
-```
 
 </section>
 
 <section class="unidad" id="unidad3">
 
-```
 <h2>Tema 3. Autómatas Finitos. </h2>
 
 <div class="seccion">
     <h3>Resumen</h3>
     <div class="caja">
-```
 3.1 Conceptos: Definición y Clasificación de Autómata Finito (AF)
 
 Un Autómata Finito (AF) es un modelo matemático utilizado para reconocer patrones y lenguajes formales mediante un conjunto limitado de estados y transiciones. Funciona leyendo símbolos de entrada y cambiando de estado según reglas definidas. Los autómatas finitos se clasifican principalmente en Autómatas Finitos Deterministas (AFD), donde cada símbolo conduce a un único estado, y Autómatas Finitos No Deterministas (AFND), donde un símbolo puede generar varias transiciones posibles.
@@ -381,27 +437,31 @@ La minimización de estados consiste en reducir el número de estados de un aut�
 
 Los autómatas finitos tienen aplicaciones en áreas como compiladores, validación de datos, procesamiento de texto, sistemas de control y reconocimiento de patrones. Un caso de estudio común es la validación de cadenas en formularios web, donde un autómata verifica que una entrada cumpla reglas específicas, como formatos de correos electrónicos o contraseñas. Gracias a ello, se garantiza que los datos ingresados sean correctos antes de ser procesados por el sistema.. </div> </div>
 
-```
-<div class="seccion">
-    <h3>Ejemplo</h3>
-    <div class="imagen-ejemplo">
-        <img src="Ejemplo3.png" alt="Ejemplo Unidad 3">
+
+<div class="imagen-ejemplo">
+
+    <img src="Ejemplo3.png" alt="Ejemplo Unidad 3">
+
+    <div class="fuente-imagen">
+        Fuente:
+        <a href="URL_DE_LA_IMAGEN_3" target="_blank">
+            Ver fuente
+        </a>
     </div>
+
 </div>
-```
+
 
 </section>
 
 <section class="unidad" id="unidad4">
 
-```
+
 <h2>Tema 4. Análisis Léxico. </h2>
 
 <div class="seccion">
     <h3>Resumen</h3>
     <div class="caja">
-```
-
 4.1 Funciones del analizador léxico
 
 El analizador léxico es la primera fase de un compilador. Su función principal es leer el código fuente carácter por carácter y agruparlo en unidades llamadas tokens, que serán utilizadas por las siguientes etapas del compilador. Además, elimina espacios en blanco, comentarios y detecta posibles errores léxicos.
@@ -432,27 +492,29 @@ Los generadores de analizadores léxicos son herramientas que crean automáticam
 
 Una aplicación común del análisis léxico es el desarrollo de compiladores para lenguajes de programación. Por ejemplo, al analizar un programa escrito en Java o C++, el analizador léxico identifica palabras reservadas, operadores, números e identificadores, generando una tabla de tokens que será utilizada por las siguientes fases del compilador. Esto permite interpretar correctamente el código y detectar errores desde las primeras etapas del proceso de compilación. </div> </div>
 
-```
-<div class="seccion">
-    <h3>Ejemplo</h3>
-    <div class="imagen-ejemplo">
-        <img src="Ejemplo4.png" alt="Ejemplo Unidad 4">
+<div class="imagen-ejemplo">
+
+    <img src="Ejemplo4.png" alt="Ejemplo Unidad 4">
+
+    <div class="fuente-imagen">
+        Fuente:
+        <a href="URL_DE_LA_IMAGEN_4" target="_blank">
+            Ver fuente
+        </a>
     </div>
+
 </div>
-```
+
 
 </section>
 
 <section class="unidad" id="unidad5">
 
-```
 <h2>Tema 5. Análisis Sintáctico. </h2>
 
 <div class="seccion">
     <h3>Resumen</h3>
     <div class="caja">
-```
-
 5.1 Definición y clasificación de gramáticas
 
 Una gramática es un conjunto de reglas que define cómo se pueden formar las estructuras válidas de un lenguaje. En teoría de compiladores, las gramáticas se clasifican según la jerarquía de Chomsky en gramáticas regulares, libres de contexto, sensibles al contexto y no restringidas. Estas permiten describir formalmente la sintaxis de un lenguaje de programación.
@@ -502,28 +564,30 @@ El manejo de errores sintácticos permite detectar y reportar problemas en la es
 5.10 Generadores de analizadores sintácticos
 
 Los generadores de analizadores sintácticos son herramientas que crean automáticamente parsers a partir de una especificación gramatical. Entre las más utilizadas se encuentran Yacc, Bison y ANTLR. Estas herramientas simplifican el desarrollo de compiladores y garantizan una implementación más eficiente del análisis sintáctico.. </div> </div>
+<div class="imagen-ejemplo">
 
-```
-<div class="seccion">
-    <h3>Ejemplo</h3>
-    <div class="imagen-ejemplo">
-        <img src="Ejemplo5.png" alt="Ejemplo Unidad 5">
+    <img src="Ejemplo5.png" alt="Ejemplo Unidad 5">
+
+    <div class="fuente-imagen">
+        Fuente:
+        <a href="URL_DE_LA_IMAGEN_5" target="_blank">
+            Ver fuente
+        </a>
     </div>
+
 </div>
-```
+
 
 </section>
 
 <section class="unidad" id="unidad6">
 
-```
+
 <h2>Tema 6. Máquinas de Turing. </h2>
 
 <div class="seccion">
     <h3>Resumen</h3>
     <div class="caja">
-```
-
 6.1 Definición formal de una Máquina de Turing (MT)
 
 Una Máquina de Turing (MT) es un modelo matemático de computación propuesto por Alan Turing en 1936. Está formada por una cinta potencialmente infinita dividida en celdas, un cabezal de lectura/escritura y un conjunto de estados con reglas de transición. La máquina procesa símbolos de entrada moviéndose por la cinta, leyendo, escribiendo y cambiando de estado hasta aceptar o rechazar una cadena. Se considera uno de los modelos fundamentales para estudiar los límites de la computación.
@@ -540,19 +604,23 @@ Importancia de las Máquinas de Turing
 
 Las Máquinas de Turing son fundamentales en la teoría de la computación porque permiten estudiar qué problemas pueden resolverse mediante algoritmos y cuáles son sus limitaciones. Además, sirven como base teórica para el diseño de computadoras, compiladores y sistemas de procesamiento de información modernos.. </div> </div>
 
-```
-<div class="seccion">
-    <h3>Ejemplo</h3>
-    <div class="imagen-ejemplo">
-        <img src="Ejemplo6.png" alt="Ejemplo Unidad 6">
+<div class="imagen-ejemplo">
+
+    <img src="Ejemplo6.png" alt="Ejemplo Unidad 6">
+
+    <div class="fuente-imagen">
+        Fuente:
+        <a href="URL_DE_LA_IMAGEN_6" target="_blank">
+            Ver fuente
+        </a>
     </div>
+
 </div>
-```
 
 </section>
 
 <footer>
-    Ponce García Victor Hugo | García Covarrubias Mauricio
+  &copy  Ponce García Victor Hugo | García Covarrubias Mauricio
 </footer>
 
 </body>
